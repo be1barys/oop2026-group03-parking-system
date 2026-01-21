@@ -1,4 +1,4 @@
-import java.util.Objects;
+package hotelbooking.entities;
 
 public class Guest {
 
@@ -20,6 +20,7 @@ public class Guest {
         return id;
     }
 
+    public void setId(int id) {this.id = id;}
 
     public String getName() {
         return name;
@@ -39,6 +40,6 @@ public class Guest {
 
     @Override
     public String toString() {
-        return "Guest{id=" + id + ", name='" + name + "', email='" + email + "'}";
+        return "hotelbooking.entities.Guest{id=" + id + ", name='" + name + "', email='" + email + "'}";
     }
 }

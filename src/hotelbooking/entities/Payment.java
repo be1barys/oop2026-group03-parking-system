@@ -1,3 +1,4 @@
+package hotelbooking.entities;
 
 public class Payment {
     private int id;
@@ -45,7 +46,7 @@ public class Payment {
 
     @Override
     public String toString() {
-        return "Payment{id=" + id + ", reservationId=" + reservationId +
+        return "hotelbooking.entities.Payment{id=" + id + ", reservationId=" + reservationId +
                 ", amount=" + amount + ", status='" + status + "'}";
     }
 }
