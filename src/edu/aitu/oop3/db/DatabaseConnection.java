@@ -9,7 +9,7 @@ public class DatabaseConnection {
     private static final String PASSWORD =
             "Bipon34482!"; // ← DATABASE PASSWORD
     private DatabaseConnection() {
-// no instances
+
     }
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);

@@ -1,4 +1,4 @@
-import java.util.Objects;
+package hotelbooking.entities;
 
 public class Room {
 
@@ -47,7 +47,7 @@ public class Room {
 
     @Override
     public String toString() {
-        return "Room{id=" + id + ", number='" + number +
+        return "hotelbooking.entities.Room{id=" + id + ", number='" + number +
                 "', type='" + type + "', pricePerNight=" + pricePerNight + "}";
     }
 }
