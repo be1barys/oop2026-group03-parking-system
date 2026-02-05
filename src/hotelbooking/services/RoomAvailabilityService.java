@@ -16,7 +16,7 @@ public class RoomAvailabilityService {
     }
     public List<Room> search(LocalDate checkIn, LocalDate checkOut) throws InvalidDateRangeException {
         if (!checkIn.isBefore(checkOut)) {
-            throw new InvalidDateRangeException("Invalid date range (check-in must be before check-out).");
+            throw new InvalidDateRangeException("Invalid date range (check-in must be before check-out)#1.");
         }
         return roomRepository.findAvailableRooms(checkIn, checkOut);
     }
