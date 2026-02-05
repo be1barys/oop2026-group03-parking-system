@@ -33,7 +33,7 @@ public class Main {
                 1) Search available rooms by date
                 2) Create a reservation
                 3) Cancel a reservation
-                4) Exit
+                4) Exit!
             """);
 
             System.out.print("Choose option: ");
