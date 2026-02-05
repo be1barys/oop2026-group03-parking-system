@@ -38,7 +38,7 @@ public class ReservationService {
 
         List<Room> available = roomRepo.findAvailableRooms(checkIn, checkOut);
         if (available.isEmpty()) {
-            throw new RoomNotAvailableException("No rooms available for these dates.");
+            throw new RoomNotAvailableException("No rooms available for these dates. sorry(");
         }
 
         Room chosen = available.get(0); // auto room]
