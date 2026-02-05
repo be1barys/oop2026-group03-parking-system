@@ -11,7 +11,7 @@ public class PaymentService {
 
         if (depositAmount < minDeposit) {
             throw new PaymentDeclinedException(
-                    "Payment declined. Minimum deposit is 20% = " + minDeposit
+                    "Payment declined. Minimum deposit is 20% == " + minDeposit
             );
         }
     }
