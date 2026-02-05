@@ -11,7 +11,7 @@ public class ReservationRepositoryImpl implements ReservationRepository {
     public int save(Reservation r) {
         String sql = """
             INSERT INTO reservations (guest_id, room_id, check_in, check_out, status, total_price, deposit_paid)
-            VALUES (?, ?, ?, ?, 'ACTIVE', ?, ?)
+            VALUES (?, ?, ?, ?, 'ACTIVE! ', ?, ?)
             RETURNING id
         """;
 
