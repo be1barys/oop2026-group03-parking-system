@@ -5,7 +5,7 @@ import java.sql.*;
 
 public class GuestRepositoryImpl implements GuestRepository {
 
-    @Override
+    @Override //id
     public int getOrCreateGuestId(String name, String email) {
         String findSql = "SELECT id FROM guests WHERE email = ?";
         String insertSql = "INSERT INTO guests(name, email) VALUES (?, ?) RETURNING id";

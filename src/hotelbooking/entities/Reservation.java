@@ -75,7 +75,7 @@ public class Reservation {
     public void setStatus(String status) { this.status = status; }
 
     @Override
-    public String toString() {
+    public String toString() { //return
         return "hotelbooking.entities.Reservation{id=" + id + ", guestId=" + guestId +
                 ", roomId=" + roomId + ", checkIn=" + checkIn +
                 ", checkOut=" + checkOut + " , totalPrice= " + totalPrice + " , depositPaid= " + depositPaid + " , status= " + status + "}";
