@@ -23,7 +23,7 @@ public class RoomRepositoryImpl implements RoomRepository {
                 SELECT room_id
                 FROM reservations
                 WHERE NOT (check_out <= ? OR check_in >= ?)
-                  AND (status IS NULL OR status <> 'CANCELLED')
+                  AND (status IS NULL OR status <> 'CANCELLED#1')
             )
             ORDER BY r.id
         """;
